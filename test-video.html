@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="padding: 40px; max-width: 800px; margin: 0 auto;">
+        <h1>Test del Reproductor de Video</h1>
+
+        <div class="cassette-container">
+            <button class="cassette-button" id="btn-cassette"
+                aria-label="Reproducir fragmento de La Pantera Rosa en reproductor retro">
+                <div class="cassette-body">
+                    <div class="cassette-label">
+                        <span class="cassette-title">La Pantera Rosa</span>
+                        <span class="cassette-subtitle">Episodio Clásico</span>
+                    </div>
+                    <div class="cassette-reels">
+                        <div class="reel left-reel" aria-hidden="true">
+                            <div class="reel-center"></div>
+                        </div>
+                        <div class="reel right-reel" aria-hidden="true">
+                            <div class="reel-center"></div>
+                        </div>
+                    </div>
+                    <div class="cassette-tape" aria-hidden="true"></div>
+                </div>
+                <span class="cassette-text">Reproducir Fragmento de la Pantera Rosa</span>
+            </button>
+        </div>
+
+        <div id="tv-container" class="tv-container hidden" role="region"
+            aria-label="Reproductor de video - Pantalla de televisión retro con episodio de La Pantera Rosa">
+            <div class="tv-frame">
+                <div class="tv-screen">
+                    <div id="video-player" class="video-player">
+                        <!-- El iframe de YouTube se insertará aquí dinámicamente -->
+                    </div>
+                </div>
+                <div class="tv-controls" aria-hidden="true">
+                    <div class="tv-knob"></div>
+                    <div class="tv-knob"></div>
+                </div>
+                <div class="tv-speaker" aria-hidden="true">
+                    <div class="speaker-line"></div>
+                    <div class="speaker-line"></div>
+                    <div class="speaker-line"></div>
+                    <div class="speaker-line"></div>
+                    <div class="speaker-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px; padding: 20px; background: #f0f0f0; border-radius: 8px;">
+            <h2>Instrucciones de Prueba:</h2>
+            <ol>
+                <li>Abre la consola del navegador (F12)</li>
+                <li>Haz clic en el botón del cassette</li>
+                <li>Verifica si aparece algún error en la consola</li>
+                <li>Verifica si el TV container se muestra (debe aparecer abajo del botón)</li>
+                <li>Verifica si el video de YouTube se carga</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="video-player.js"></script>
+    <script>
+        // Debug script
+        console.log('=== DEBUG INFO ===');
+        console.log('Botón cassette:', document.getElementById('btn-cassette'));
+        console.log('TV container:', document.getElementById('tv-container'));
+        console.log('Video player:', document.getElementById('video-player'));
+
+        // Agregar listener adicional para debug
+        const btn = document.getElementById('btn-cassette');
+        if (btn) {
+            btn.addEventListener('click', () => {
+                console.log('¡Botón clickeado!');
+            });
+        } else {
+            console.error('ERROR: No se encontró el botón cassette');
+        }
+    </script>
+</body>
+
+</html>

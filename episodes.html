@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Disfruta de episodios de La Pantera Rosa. Más de 200 episodios clásicos de animación.">
+    <title>La Pantera Rosa - Ver un poco de la Pantera Rosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header con navegación -->
+    <header role="banner" aria-label="Encabezado del sitio">
+        <div class="header-container">
+            <div class="logo">
+                <p class="site-title">La Pantera Rosa</p>
+                <p class="site-tagline">El Felino Más Elegante de la Animación</p>
+            </div>
+
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul class="nav-menu" role="list">
+                    <li><a href="index.html" class="nav-link" aria-label="Ir a la página de Inicio">Inicio</a></li>
+                    <li><a href="gallery.html" class="nav-link" aria-label="Ir a la página de Galería">Galería</a></li>
+                    <li><a href="episodes.html" class="nav-link active" aria-current="page"
+                            aria-label="Ver Videos - Página actual">Ver Videos</a></li>
+                </ul>
+            </nav>
+
+            <div class="cta-container">
+                <a href="index.html" class="cta-button" aria-label="Volver a la página de Inicio">Volver al Inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+
+        <!-- Título principal -->
+        <section role="region" aria-labelledby="video-heading">
+            <h1 id="video-heading">Ver un poco de la Pantera Rosa</h1>
+            <p>
+                La Pantera Rosa cuenta con más de 200 episodios de animación clásica producidos entre 1964 y 1980.
+                Estos cortometrajes han entretenido a generaciones con su humor visual único y la icónica música
+                de Henry Mancini. Aquí puedes disfrutar de un fragmento de esta legendaria serie.
+            </p>
+            <p>
+                Cada episodio es una obra maestra de animación que demuestra el genio del humor visual sin necesidad
+                de diálogos. La música característica acompaña cada aventura de nuestro elegante felino rosa,
+                creando una experiencia inolvidable que ha deleitado a audiencias de todas las edades.
+            </p>
+        </section>
+
+        <!-- Sección: Reproductor de Video con Cassette -->
+        <section role="region" aria-labelledby="cassette-heading">
+            <h2 id="cassette-heading">Reproductor Retro</h2>
+
+            <p>
+                Disfruta de un fragmento de La Pantera Rosa en nuestro reproductor retro estilo cassette. Este
+                reproductor te transportará a la época dorada de la animación clásica, cuando estos episodios se
+                disfrutaban en televisores antiguos y reproductores de VHS.
+            </p>
+
+            <p>
+                Haz clic en el cassette para iniciar la reproducción y revive la magia de La Pantera Rosa. El video
+                se mostrará en una pantalla de televisión vintage que recrea la experiencia auténtica de ver estos
+                episodios en su formato original.
+            </p>
+
+            <div class="cassette-container">
+                <button class="cassette-button" id="btn-cassette"
+                    aria-label="Reproducir fragmento de La Pantera Rosa en reproductor retro">
+                    <div class="cassette-body">
+                        <div class="cassette-label">
+                            <span class="cassette-title">La Pantera Rosa</span>
+                            <span class="cassette-subtitle">Episodio Clásico</span>
+                        </div>
+                        <div class="cassette-reels">
+                            <div class="reel left-reel" aria-hidden="true">
+                                <div class="reel-center"></div>
+                            </div>
+                            <div class="reel right-reel" aria-hidden="true">
+                                <div class="reel-center"></div>
+                            </div>
+                        </div>
+                        <div class="cassette-tape" aria-hidden="true"></div>
+                    </div>
+                    <span class="cassette-text">Reproducir Fragmento de la Pantera Rosa</span>
+                </button>
+            </div>
+
+            <!-- TV Screen Container -->
+            <div id="tv-container" class="tv-container hidden" role="region"
+                aria-label="Reproductor de video - Pantalla de televisión retro con episodio de La Pantera Rosa">
+                <div class="tv-frame">
+                    <div class="tv-screen">
+                        <div id="video-player" class="video-player">
+                            <!-- El iframe de YouTube se insertará aquí dinámicamente -->
+                        </div>
+                    </div>
+                    <div class="tv-controls" aria-hidden="true">
+                        <div class="tv-knob"></div>
+                        <div class="tv-knob"></div>
+                    </div>
+                    <div class="tv-speaker" aria-hidden="true">
+                        <div class="speaker-line"></div>
+                        <div class="speaker-line"></div>
+                        <div class="speaker-line"></div>
+                        <div class="speaker-line"></div>
+                        <div class="speaker-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Información sobre los Videos -->
+        <section role="region" aria-labelledby="info-heading">
+            <h2 id="info-heading">Sobre los Episodios</h2>
+
+            <p>
+                Los episodios de La Pantera Rosa que presentamos son cortometrajes clásicos de la serie original
+                de los años 60 y 70. Cada episodio es una obra maestra de animación que demuestra el genio del
+                humor visual sin necesidad de diálogos. La música icónica de Henry Mancini acompaña cada aventura
+                de nuestro elegante felino rosa.
+            </p>
+
+            <p>
+                Estos episodios han sido cuidadosamente seleccionados para mostrar lo mejor de La Pantera Rosa.
+                Desde sus interacciones cómicas con el hombrecito hasta sus ingeniosas soluciones a problemas
+                cotidianos, cada video es una experiencia entretenida que ha deleitado a generaciones de
+                espectadores alrededor del mundo.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Información del sitio">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>La Pantera Rosa</h3>
+                <p>Celebrando décadas de elegancia y humor animado</p>
+            </div>
+
+            <div class="footer-section" aria-labelledby="footer-nav-heading">
+                <h3 id="footer-nav-heading">Navegación</h3>
+                <ul class="footer-links" role="list">
+                    <li><a href="index.html" aria-label="Ir a la página de Inicio">Inicio</a></li>
+                    <li><a href="gallery.html" aria-label="Ir a la página de Galería">Galería</a></li>
+                    <li><a href="episodes.html" aria-label="Volver a la página de Ver Videos">Ver Videos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section" aria-labelledby="footer-contact-heading">
+                <h3 id="footer-contact-heading">Contacto</h3>
+                <p>Email: <a href="mailto:grimaldogarcia2004@gmail.com"
+                        aria-label="Enviar email de contacto a grimaldogarcia2004@gmail.com">grimaldogarcia2004@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 La Pantera Rosa Fan Site. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="video-player.js"></script>
+</body>
+
+</html>
