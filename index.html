@@ -27,7 +27,7 @@
                     <li><a href="index.html" class="nav-link active" aria-current="page"
                             aria-label="Inicio - Página actual">Inicio</a></li>
                     <li><a href="gallery.html" class="nav-link" aria-label="Ir a la página de Galería">Galería</a></li>
-                    <li><a href="episodes.html" class="nav-link" aria-label="Ir a la página de Ver Videos">Ver
+                    <li><a href="videos.html" class="nav-link" aria-label="Ir a la página de Ver Videos">Ver
                             Videos</a></li>
                 </ul>
             </nav>
@@ -87,29 +87,49 @@
         <section role="region" aria-labelledby="characters-heading">
             <h2 id="characters-heading">Personajes Principales</h2>
 
-            <p>
-                <strong>La Pantera Rosa:</strong> El protagonista indiscutible de la serie es esta elegante pantera de
-                color rosa que nunca habla pero se comunica perfectamente a través de gestos, expresiones faciales y
-                lenguaje corporal. Su personalidad es sofisticada, ingeniosa y siempre mantiene la calma incluso en las
-                situaciones más caóticas. La Pantera Rosa representa la elegancia y el ingenio, resolviendo problemas de
-                manera creativa y siempre saliendo victoriosa de las situaciones más complicadas.
-            </p>
+            <div class="character-card">
+                <h3>La Pantera Rosa</h3>
+                <p>
+                    El protagonista indiscutible de la serie es esta elegante pantera de
+                    color rosa que nunca habla pero se comunica perfectamente a través de gestos, expresiones faciales y
+                    lenguaje corporal. Su personalidad es sofisticada, ingeniosa y siempre mantiene la calma incluso en
+                    las
+                    situaciones más caóticas. La Pantera Rosa representa la elegancia y el ingenio, resolviendo
+                    problemas de
+                    manera creativa y siempre saliendo victoriosa de las situaciones más complicadas.
+                </p>
+                <a href="https://es.wikipedia.org/wiki/La_pantera_Rosa" class="cta-button"
+                    aria-label="Ir a ver biografía de la pantera rosa en Wikipedia">Ir a ver biografía de la pantera
+                    rosa</a>
+            </div>
 
-            <p>
-                <strong>El Hombrecito (The Little Man):</strong> Uno de los personajes recurrentes más memorables es el
-                hombrecito de bigote blanco, a menudo vestido con un abrigo y sombrero. Este personaje, que aparece en
-                muchos episodios, frecuentemente se encuentra en situaciones de conflicto con La Pantera Rosa. A pesar
-                de sus intentos por mantener el orden o completar tareas simples, invariablemente termina siendo víctima
-                de las travesuras o la mala suerte que rodea a la pantera.
-            </p>
+            <div class="character-card">
+                <h3>El Hombrecito (The Little Man)</h3>
+                <p>
+                    Uno de los personajes recurrentes más memorables es el
+                    hombrecito de bigote blanco, a menudo vestido con un abrigo y sombrero. Este personaje, que aparece
+                    en
+                    muchos episodios, frecuentemente se encuentra en situaciones de conflicto con La Pantera Rosa. A
+                    pesar
+                    de sus intentos por mantener el orden o completar tareas simples, invariablemente termina siendo
+                    víctima
+                    de las travesuras o la mala suerte que rodea a la pantera.
+                </p>
+                <a href="https://es.wikipedia.org/wiki/La_pantera_Rosa" class="cta-button"
+                    aria-label="Ir a ver biografía del hombrecillo en Wikipedia">Ir a ver biografía del hombrecillo</a>
+            </div>
 
-            <p>
-                <strong>El Inspector Clouseau:</strong> Aunque técnicamente pertenece a las películas de acción real, el
-                Inspector Jacques Clouseau está intrínsecamente ligado al universo de La Pantera Rosa. Este torpe pero
-                bien intencionado inspector francés, interpretado magistralmente por Peter Sellers, también tuvo su
-                versión animada en varias series de televisión, donde sus investigaciones siempre terminaban en caos
-                cómico.
-            </p>
+            <div class="character-card">
+                <h3>El Inspector Clouseau</h3>
+                <p>
+                    Aunque técnicamente pertenece a las películas de acción real, el
+                    Inspector Jacques Clouseau está intrínsecamente ligado al universo de La Pantera Rosa. Este torpe
+                    pero
+                    bien intencionado inspector francés, interpretado magistralmente por Peter Sellers, también tuvo su
+                    versión animada en varias series de televisión, donde sus investigaciones siempre terminaban en caos
+                    cómico.
+                </p>
+            </div>
         </section>
 
         <!-- Sección: Legado Cultural -->
@@ -142,6 +162,27 @@
             </p>
         </section>
 
+        <!-- Sección: Contacto -->
+        <section role="region" aria-labelledby="contact-form-heading">
+            <h2 id="contact-form-heading">Contáctanos</h2>
+            <p>¿Tienes alguna pregunta o comentario? Nos encantaría escucharte.</p>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Enviar Mensaje</button>
+            </form>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -157,7 +198,7 @@
                 <ul class="footer-links" role="list">
                     <li><a href="index.html" aria-label="Volver a la página de Inicio">Inicio</a></li>
                     <li><a href="gallery.html" aria-label="Ir a la página de Galería">Galería</a></li>
-                    <li><a href="episodes.html" aria-label="Ir a la página de Ver Videos">Ver Videos</a></li>
+                    <li><a href="videos.html" aria-label="Ir a la página de Ver Videos">Ver Videos</a></li>
                 </ul>
             </div>
 

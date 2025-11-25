@@ -25,14 +25,11 @@ function initCassettePlayer() {
 
     if (!btnCassette || !tvContainer || !videoPlayer) {
         console.error('❌ Error: No se encontraron todos los elementos necesarios');
-        console.error('btnCassette:', btnCassette);
-        console.error('tvContainer:', tvContainer);
-        console.error('videoPlayer:', videoPlayer);
         return;
     }
 
     // Pink Panther video URL - Video verificado que funciona
-    const videoURL = 'https://www.youtube.com/watch?v=9OPc7MRm4Y8';
+    const videoURL = 'https://youtu.be/6ZSIwUwbITM';
 
     console.log('✅ Reproductor inicializado correctamente');
     console.log('Video URL:', videoURL);
